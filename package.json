@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter mocha-junit-reporter test/test_*.js"
+    "test": "mocha --reporter mocha-junit-reporter --reporter mochawesome test/test_*.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
     "mocha": "^9.0.2"
   },
   "devDependencies": {
-    "mocha-junit-reporter": "^2.0.0"
+    "mocha-junit-reporter": "^2.0.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-report-generator": "^5.2.0"
   }
 }
